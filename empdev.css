@@ -1,0 +1,251 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v19/u-440qyriQwlOrhSvowK_l5-ciZMZ-Y.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v19/u-440qyriQwlOrhSvowK_l5-fCZM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Karla'), local('Karla-Regular'), url(https://fonts.gstatic.com/s/karla/v6/qkBbXvYC6trAT7RbLtyG5Q.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Karla'), local('Karla-Regular'), url(https://fonts.gstatic.com/s/karla/v6/qkBbXvYC6trAT7RVLtw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4.44rem;
+  padding: 0 12%;
+  background-color: white;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: 'Karla', sans-serif;
+}
+
+.header .logo {
+  flex-grow: 1;
+  color: #A18B96;
+}
+
+.header li {
+  display: inline;
+  padding-right: 2.22rem;
+}
+
+.header li a {
+  text-decoration: none;
+  color: #A18B96;
+}
+
+.header span{
+  text-decoration: none;
+  color: #A18B96;
+}
+
+@media only screen and (max-width: 550px) {
+  .header {
+    flex-direction: column;
+  }
+}
+
+/* Banner */
+
+.banner {
+background: url("https://rally-new.s3.amazonaws.com/iStock_87614919_LARGE.jpg?mtime=20161110142658") center center no-repeat;
+background-size: cover;
+height: 40rem;
+}
+
+.banner h2 {
+text-align: center;
+font-family: 'Merriweather', serif;
+padding-top: 40px;
+font-size: 45px;
+color: #fff;
+}
+
+.banner h3 {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  padding-top: 20px;
+  font-size: 25px;
+  color: #000;
+  padding-bottom: 20px;
+}
+
+.button {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.btn-banner {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1.3px;
+  padding: 16px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.btn-banner:hover {
+  background-color: #A18B96;
+  color: #fff;
+}
+
+/* Main */
+
+.main {
+
+}
+
+.main h2 {
+  text-align: center;
+  padding-top: 25px;
+  font-size: 35px;
+  color: #A18B96;
+  font-family: 'Karla', sans-serif;
+}
+
+.main hr {
+  width: 30%;
+  color: hsl(56, 3%, 23%);
+}
+
+.main p {
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  color: #565254;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.main li {
+  list-style: none;
+}
+
+
+.btn-main {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1.3px;
+  padding: 16px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.btn-main:hover {
+  background-color: #A18B96;
+  color: #fff;
+}
+
+.subscribe {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #000;
+  height: 200px;
+}
+
+.subscribe h3 {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 35px;
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+}
+.subscribe label {
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  padding-right: 5px;
+}
+
+
+/*About us page*/
+
+.about h2 {
+  text-align: center;
+  padding-top: 25px;
+  font-size: 35px;
+  color: #A18B96;
+  font-family: 'Karla', sans-serif;
+}
+.about p{
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  color: #565254;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+/*Get Started page*/
+.get-started h2 {
+  text-align: center;
+  padding-top: 25px;
+  font-size: 35px;
+  color: #A18B96;
+  font-family: 'Karla', sans-serif;
+}
+.get-started p {
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  color: #565254;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.get-started li {
+  list-style: none;
+  font-family: 'Karla', sans-serif;
+  color: #565254;
+  text-align: center;
+}
+
+/*Contact Us*/
+.contact-us h2 {
+  text-align: center;
+  padding-top: 25px;
+  font-size: 35px;
+  color: #A18B96;
+  font-family: 'Karla', sans-serif;
+}
+.contact-us p {
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  color: #565254;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
